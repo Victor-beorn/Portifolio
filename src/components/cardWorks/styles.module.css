@@ -7,35 +7,68 @@
 
 .filters button {
   padding: 0.5rem 1.2rem;
-  border: none;
-  background: #2d2d2d;
-  color: white;
+  background-color: var(--gray-600);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  color: var(--text-over-primary-dark);
+  border: 2px solid var(--primary);
   cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
+  transition: all 3.s ease-in-out;
+}
+
+.filters button:hover{
+  background: var(--bs-btn-bg);
 }
 
 .filters .active {
-  background: #7c3aed;
+  background: var(--bs-btn-bg);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.grid a{
+  color: var(--primary-text);
+  transition: transform .35sease-in-out;
+}
+
+.grid h3:hover{
+  color: #6e4ef2;
+}
+
+.grid p{
+  color: var(--text-muted);
 }
 
 .card {
-  background: #1e1e1e;
-  padding: 1rem;
+  background: linear-gradient(var(--gray-900), var(--gray-800)) padding-box, linear-gradient(to bottom, var(--text-muted), transparent) border-box;
+  border: 2px solid transparent;
+  padding: 2rem;
   border-radius: 10px;
-  color: white;
+  color: var(--primary-text);
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform .35sease-in-out;
 }
 
-.card img {
+.card:hover{
+  background: linear-gradient(var(--gray-900), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
+}
+
+.zoomWrapper img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.zoomWrapper img:hover{
+  transform: scale(1.05);
+}
+
+.zoomWrapper{
+  overflow: hidden;
 }

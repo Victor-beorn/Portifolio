@@ -7,7 +7,7 @@
   padding: 2rem;
   min-height: 100vh; 
   align-items: start;
-  min-width: 80rem;
+  
 }
 
 /* Responsivo para mobile */
@@ -23,4 +23,22 @@
   border-radius: 1rem;
   background: linear-gradient(var(--gray-800), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
   border: 1px solid transparent;
+  min-width: 80rem;
+  overflow: auto;
+  max-height: 70rem;
+  scrollbar-width: thin;
+  scrollbar-color: #6e4ef2 var(--gray-800);
+}
+
+.mainBackground::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mainBackground::-webkit-scrollbar-track {
+  background: var(--gray-800);
+}
+
+.mainBackground::-webkit-scrollbar-thumb {
+  background-color: #6e4ef2;
+  border-radius: 10px;
 }
