@@ -2,13 +2,12 @@ import { CircleUser, GraduationCap } from 'lucide-react';
 import { Card } from '../card';
 
 import styles from './styles.module.css';
+import { Title } from '../title';
 
 export function About() {
   return (
     <div className={styles.sobre}>
-      <h2 className={styles.sobreTitle}>
-        <CircleUser /> Sobre mim
-      </h2>
+      <Title title='Sobre mim' icon={<CircleUser />}/>
       <p className={styles.sobreCard}>
         Sou Victor Alves, desenvolvedor front-end com mais de 3 anos de
         experiência entregando soluções web funcionais, rápidas e orientadas à
@@ -26,9 +25,7 @@ export function About() {
         novas tecnologias e contribuir com times ágeis na construção de produtos
         digitais de alto impacto.
       </p>
-      <h2 className={styles.sobreTitle}>
-        <GraduationCap /> Formação
-      </h2>
+      <Title title='Formação' icon={<GraduationCap />}/>
       <Card
         
         sub='2021-2023'

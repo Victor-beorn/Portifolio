@@ -1,0 +1,26 @@
+.sobreTitle {
+  position: relative;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  padding-bottom: 1.5rem;
+}
+
+.sobreTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--bs-btn-bg); /* o seu gradiente */
+}
+
+.sobreTitle svg {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-right: 1rem;
+  color: #8c71ff;
+}

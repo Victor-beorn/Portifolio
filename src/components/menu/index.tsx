@@ -54,7 +54,7 @@ export function Menu() {
         aria-label='Ir para Portfolio'
         title='Portfolio'
       >
-        <Folder /> Portfolio
+        <Folder /> Portifólio
       </a>
       <a
         href='#'
