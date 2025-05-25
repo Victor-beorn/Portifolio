@@ -1,0 +1,45 @@
+
+.perfil {
+  width: 35rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: linear-gradient(var(--gray-800), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
+  border: 1px solid transparent;
+}
+
+.perfil img {
+  width: 24rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: 10% 20%;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.perfilTitle{
+  margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfilTitle h3 {
+  color: var(--text-default);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.perfilTitle p {
+  background-color: var(--gray-600);
+  width: 15rem;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  color: var(--text-over-primary-dark);
+}

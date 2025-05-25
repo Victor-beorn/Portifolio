@@ -1,0 +1,61 @@
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.links a {
+  padding: 1rem;
+  background-color: var(--gray-500);
+  color: var(--text-over-primary-dark);
+  border-radius: 0.5rem;
+  display: inline-flex;
+  transition: all 0.3ms ease;
+  border: 2px solid var(--primary);
+}
+
+.links a:hover {
+  background: var(--bs-btn-bg);
+}
+
+.links svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.contatos {
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  width: 30rem;
+  background: linear-gradient(var(--gray-900), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
+  border: 1px solid transparent;
+}
+
+.contatoLink{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #4e4a4a;
+  margin-bottom: 1rem;
+}
+
+.contatoLink div {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contatoLink a {
+  color: var(--text-default);
+  transition: all 0.3ms ease;
+}
+
+.contatoLink a:hover {
+  color: var(--primary);
+}
+
+.contatoLink p {
+  font-size: 12px;
+}

@@ -1,0 +1,21 @@
+.menu{
+  display: inline-flex;
+  gap: 2.4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.menuLink{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--gray-600);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  color: var(--text-over-primary-dark);
+  border: 2px solid var(--primary);
+}
+
+.menuLink:hover {
+  background: var(--bs-btn-bg);
+} 

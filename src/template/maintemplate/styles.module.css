@@ -1,0 +1,25 @@
+.mainTemplate {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;    
+  padding: 2rem;
+  min-height: 100vh; 
+  align-items: start;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .mainTemplate {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 1rem;
+  }
+}
+
+.mainBackground{
+  border-radius: 1rem;
+  background: linear-gradient(var(--gray-800), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
+  border: 1px solid transparent;
+}
