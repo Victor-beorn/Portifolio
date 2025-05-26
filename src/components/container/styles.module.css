@@ -1,14 +1,24 @@
-.container {
-  width: 100%;        /* nunca maior que o viewport */
-  max-width: 90rem;   /* mas limitado a 90rem em telas grandes */
-  margin: 0 auto;
-  padding: 0 1rem;    /* um espaçamento lateral mínimo */
+.container{
+    max-width: 90rem;
 }
 
-.container-fluid{
-    max-width: auto;
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.container-fluid {
+    width: 100%;
 }
 
 .content{
     margin: 3.2rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 1.5rem; 
+    }
 }

@@ -1,26 +1,25 @@
 .mainTemplate {
-  display: grid;
-  /* primeira coluna fixa, segunda coluna flexível mas sem overflow */
-  grid-template-columns: 300px minmax(0, 1fr);
+  display: flex;
   gap: 2rem;
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh;
   align-items: start;
+  justify-content: center;
 }
+
 @media (max-width: 768px) {
   .mainTemplate {
-    /* uma única coluna que nunca estoure */
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto;
     padding: 1rem;
     max-width: 100%;
+    overflow-x: hidden;
+    flex-wrap: wrap;
   }
-
-  /* se precisar de ajuste na background, use largura 100% */
-  .mainBackground {
-    width: 100%;
-    /* remova o min-width fixo */
-    /* min-width: 5rem !important; */
+  .mainBackground{
+    min-width: 5rem !important;
+    max-height: max-content !important;
   }
 }
 

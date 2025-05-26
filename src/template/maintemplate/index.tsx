@@ -1,9 +1,11 @@
 import { Container } from '../../components/container';
 import { Perfil } from '../../components/perfil';
 import { Menu } from '../../components/menu';
+import { Footer } from '../../components/Footer';
 
 import styles from './styles.module.css';
-import { Footer } from '../../components/Footer';
+
+
 
 type MainTemplateProps = {
   children: React.ReactNode;

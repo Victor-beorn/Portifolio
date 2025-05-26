@@ -20,6 +20,9 @@ body {
   font-size: 1.6rem;
   background: var(--gray-900);
   color: var(--text-default);
+  background-image: url(../assets/img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html, body {

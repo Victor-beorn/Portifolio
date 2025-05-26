@@ -1,6 +1,6 @@
 
 .perfil {
-  width: 35rem;
+  min-width: 35rem;
   height: auto;
   display: flex;
   align-items: center;
@@ -8,6 +8,7 @@
   border-radius: 1rem;
   background: linear-gradient(var(--gray-800), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
   border: 1px solid transparent;
+  justify-self: center;
 }
 
 .perfil img {
