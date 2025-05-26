@@ -1,0 +1,22 @@
+{
+  "name": "Portfólio de Victor",
+  "short_name": "Portfólio",
+  "description": "Site pessoal de Victor, desenvolvedor front-end.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1F1F24", 
+  "theme_color": "#6d4df2", 
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/folha-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/folha-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

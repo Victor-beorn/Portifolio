@@ -16,7 +16,7 @@
   transition: all 3.s ease-in-out;
 }
 
-.filters button:hover{
+.filters button:hover {
   background: var(--bs-btn-bg);
 }
 
@@ -28,18 +28,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
+  overflow: auto;
+  max-height: 57rem;
 }
 
-.grid a{
+.grid a {
   color: var(--primary-text);
   transition: transform .35sease-in-out;
 }
 
-.grid h3:hover{
+.grid h3:hover {
   color: #6e4ef2;
 }
 
-.grid p{
+.grid p {
   color: var(--text-muted);
 }
 
@@ -54,7 +56,7 @@
   transition: transform .35sease-in-out;
 }
 
-.card:hover{
+.card:hover {
   background: linear-gradient(var(--gray-900), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
 }
 
@@ -65,10 +67,10 @@
   transition: transform 0.3s ease;
 }
 
-.zoomWrapper img:hover{
+.zoomWrapper img:hover {
   transform: scale(1.05);
 }
 
-.zoomWrapper{
+.zoomWrapper {
   overflow: hidden;
 }

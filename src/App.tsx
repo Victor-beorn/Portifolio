@@ -1,7 +1,10 @@
-import { Portifolio } from './pages/portifolio'
-import './styles/global.css'
-import './styles/theme.css'
+import { MainRouter } from './routes/MainRouter';
 
-export function App () {
-  return <Portifolio/>
+import './styles/global.css';
+import './styles/theme.css';
+
+export function App() {
+  return (
+    <MainRouter/>
+  );
 }

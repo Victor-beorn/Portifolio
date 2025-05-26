@@ -3,5 +3,10 @@
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 1268px) {
+  .work {
+    flex-direction: column;
+  }
 }

@@ -2,11 +2,16 @@ import { BriefcaseBusiness, Folder, House, Moon, Sun } from 'lucide-react';
 
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
+import { RouterLink } from '../routerLink';
 
 type AllThemes = 'dark' | 'light';
 
 export function Menu() {
-  const [theme, setTheme] = useState<AllThemes>('dark');
+  const [theme, setTheme] = useState<AllThemes>(() => {
+    const storageTheme =
+      (localStorage.getItem('theme') as AllThemes) || 'dark';
+    return storageTheme;
+  });
 
   const nextThemeIcon = {
     dark: <Sun />,
@@ -32,31 +37,31 @@ export function Menu() {
 
   return (
     <nav className={styles.menu}>
-      <a
-        href='#'
+      <RouterLink
+        href='/'
         className={styles.menuLink}
         aria-label='Ir para Home'
         title='Home'
       >
         <House /> Home
-      </a>
-      <a
-        href='#'
+      </RouterLink>
+      <RouterLink
+        href='/experiencia/'
         className={styles.menuLink}
         aria-label='Ir para Experiências'
         title='Experiências'
       >
         <BriefcaseBusiness /> Experiências
-      </a>
-      <a
-        href='#'
+      </RouterLink>
+      <RouterLink
+        href='/portifolio/'
         className={styles.menuLink}
         aria-label='Ir para Portfolio'
         title='Portfolio'
       >
         <Folder /> Portifólio
-      </a>
-      <a
+      </RouterLink>
+      <RouterLink
         href='#'
         className={styles.menuLink}
         aria-label='Mudar tema da página'
@@ -64,7 +69,7 @@ export function Menu() {
         onClick={handleThemeChange}
       >
         {nextThemeIcon[theme]}
-      </a>
+      </RouterLink>
     </nav>
   );
 }

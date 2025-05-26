@@ -1,8 +1,7 @@
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { ArrowDownToLine, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 import styles from './styles.module.css';
-
 
 export function PerfilContato() {
   return (
@@ -13,7 +12,7 @@ export function PerfilContato() {
           aria-label='Link do linkedin'
           title='linkedin'
           target='blank'
-          rel="noopener noreferrer"
+          rel='noopener noreferrer'
         >
           <Linkedin />
         </a>
@@ -22,13 +21,13 @@ export function PerfilContato() {
           aria-label='Link do github'
           title='github'
           target='blank'
-          rel="noopener noreferrer"
+          rel='noopener noreferrer'
         >
           <Github />
         </a>
 
         <a
-          href="https://wa.me/+5531993125196?text=Olá, gostaria de marcar um entrevista"
+          href='https://wa.me/+5531993125196?text=Olá, gostaria de marcar um entrevista'
           aria-label='Link do whatsapp'
           title='whatsapp'
           target='_blank'
@@ -52,6 +51,18 @@ export function PerfilContato() {
             <a href='tel:31993125196'>(31) 993125196</a>
           </div>
         </div>
+      </div>
+      <div className={styles.download}>
+        <a
+          href='/pdf/Currículo - Dev Front-end - Victor Alves.pdf'
+          download
+          target='_blank'
+          rel='noopener noreferrer'
+          
+        >
+          Baixar Currículo
+          <ArrowDownToLine />
+        </a>
       </div>
     </>
   );

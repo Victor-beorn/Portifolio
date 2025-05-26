@@ -4,18 +4,20 @@
   gap: 2rem;
   max-width: 1500px;
   margin: 0 auto;    
-  padding: 2rem;
   min-height: 100vh; 
   align-items: start;
   
 }
 
-/* Responsivo para mobile */
 @media (max-width: 768px) {
   .mainTemplate {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     padding: 1rem;
+  }
+  .mainBackground{
+    min-width: 5rem !important;
+    max-height: max-content !important;
   }
 }
 
@@ -23,9 +25,8 @@
   border-radius: 1rem;
   background: linear-gradient(var(--gray-800), var(--gray-800)) padding-box, linear-gradient(to bottom, #6e4ef2, transparent) border-box;
   border: 1px solid transparent;
-  min-width: 80rem;
-  overflow: auto;
-  max-height: 70rem;
+  min-width: 85rem;
+  max-height: 75rem;
   scrollbar-width: thin;
   scrollbar-color: #6e4ef2 var(--gray-800);
 }

@@ -6,6 +6,19 @@
   margin-top: 0.5rem;
 }
 
+.download {
+  justify-self: center;
+  margin: 2rem 0;
+}
+
+.download a {
+  background: var(--bs-btn-bg);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  color: var(--text-over-primary-dark);
+  display: inline-flex;
+}
+
 .links a {
   padding: 1rem;
   background-color: var(--gray-500);
@@ -34,7 +47,7 @@
   border: 1px solid transparent;
 }
 
-.contatoLink{
+.contatoLink {
   display: flex;
   justify-content: flex-start;
   align-items: center;
