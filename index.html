@@ -11,18 +11,8 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root" class="bg" ></div>
   <script type="module" src="/src/main.tsx"></script>
-  <script>
-  window.addEventListener('load', () => {
-    document.querySelectorAll('*').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.right > window.innerWidth) {
-        console.warn('Overflow →', el, 'rect.right=', rect.right);
-      }
-    });
-  });
-</script>
 </body>
 
 </html>

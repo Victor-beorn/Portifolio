@@ -77,3 +77,13 @@
   --toastify-text-color-light: #e6e9f0;
   --toastify-text-color-dark: #e6e9f0;
 }
+
+:root[data-theme='dark'] .bg::before {
+  filter: invert(1);
+}
+
+
+:root[data-theme='light'] .bg::before {
+  filter: grayscale(100%);
+}
+

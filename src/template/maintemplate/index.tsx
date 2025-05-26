@@ -13,7 +13,7 @@ type MainTemplateProps = {
 
 export default function MainTemplate({ children }: MainTemplateProps) {
   return (
-    <div className={styles.mainTemplate}>
+    <div className={styles.mainTemplate } >
       <Container>
         <Perfil />
       </Container>
