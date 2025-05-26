@@ -1,23 +1,26 @@
 .mainTemplate {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  /* primeira coluna fixa, segunda coluna flexível mas sem overflow */
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 2rem;
   max-width: 1500px;
-  margin: 0 auto;    
-  min-height: 100vh; 
+  margin: 0 auto;
+  min-height: 100vh;
   align-items: start;
-  
 }
-
 @media (max-width: 768px) {
   .mainTemplate {
+    /* uma única coluna que nunca estoure */
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     padding: 1rem;
+    max-width: 100%;
   }
-  .mainBackground{
-    min-width: 5rem !important;
-    max-height: max-content !important;
+
+  /* se precisar de ajuste na background, use largura 100% */
+  .mainBackground {
+    width: 100%;
+    /* remova o min-width fixo */
+    /* min-width: 5rem !important; */
   }
 }
 

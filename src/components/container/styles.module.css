@@ -1,6 +1,8 @@
-.container{
-    max-width: 90rem;
-    margin: 0 auto;
+.container {
+  width: 100%;        /* nunca maior que o viewport */
+  max-width: 90rem;   /* mas limitado a 90rem em telas grandes */
+  margin: 0 auto;
+  padding: 0 1rem;    /* um espaçamento lateral mínimo */
 }
 
 .container-fluid{

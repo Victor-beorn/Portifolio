@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+/* * {
+  outline: 1px solid red !important;
+} */
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
@@ -18,3 +22,12 @@ body {
   color: var(--text-default);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

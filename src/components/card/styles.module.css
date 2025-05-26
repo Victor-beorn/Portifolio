@@ -3,7 +3,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 16px;
-  width: 35rem;
+  max-width: 35rem;
   transition: all .3s ease-in-out;
 }
 
